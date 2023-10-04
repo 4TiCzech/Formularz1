@@ -52,6 +52,28 @@
         <select>
             <option>Optyczna</option>
             <option>Laserowa</option>
+        </select>  
+      </fieldset>
+      <fieldset>
+        <legend> Szczegóły wysyłki</legend>
+        Miasto: <input type="text" name="miasto" placeholder="Miasto w którym mieszkasz"> <br> </br>
+        Ulica: <input type="text" name="ulica" placeholder="Ulica na ktorej mieszkasz"> <br> </br>
+        Kod pocztowy: <input type="text" name="kod" placeholder="Kod pocztowy">  <br> </br>
+        Typ wysyłki: <select>
+            <optgroup label="InPost"> 
+            <option> Paczkomat </option>
+            <option> Kurier </option>
+         </optgroup>
+            <optgroup label="DHL">
+                <option> Kurier</option>
+            </optgroup>
         </select>
 
-
+        
+      </fieldset>
+      <input type="submit" name="wyslij" value="wyślij zamówienie">
+      <input type="reset" name="reset" value="zresetuj formularz">
+    </fieldset>
+    </form>
+  </body>
+</html>
