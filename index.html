@@ -29,7 +29,9 @@
             </optgroup>
         </select> 
         <br> </br> Ilośc pamięci: <label for="pamiec"> Od 500GB do 2TB </label>
-        <input type="range" name="pamiec" min="512" max="2048"> <br> </br>
+        <input type="range" name="pamiec" min="512" max="2048" id="a"  oninput="result.value=a.value"/>        
+            <output name="result" for="a">3</output>  <br> </br>   
+        </form>
         <label for="karta"></label>
         Karta graficzna: <br> </br>
         <input type="radio" name="pamiec"> 1080 GTX
@@ -44,17 +46,12 @@
       </fieldset>
       <fieldset>
         <legend>Urządzenia peryferyjne</legend>
+        wybierz kolor gratisowej podkładki pod mysz:
+        <input type="color" name="col"> <br> </br>
+        wybierz rodzaj myszy komputerowej:
+        <select>
+            <option>Optyczna</option>
+            <option>Laserowa</option>
+        </select>
 
 
-      
-        
-
-
-  
-      </fieldset>
-      <input type="submit" name="wyslij" value="wyślij zamówienie">
-      <input type="reset" name="reset" value="zresetuj formularz">
-    </fieldset>
-    </form>
-  </body>
-</html>
