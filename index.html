@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <form>
         <fieldset>
       <fieldset>
@@ -13,7 +13,23 @@
         Imię: <input type="text" name="imie" required /> <br> </br>
         Nazwisko: <input type="password" name="nazwisko" required /> <br> </br>
         e-mail: <input type="email" name="email" required/> 
+      </fieldset>
+      <fieldset>
+        <legend> Parametry komputera:</legend>
+        Procesor: <select>
+            <optgroup label="intel"> 
+                <option> intel i7-7100</option>
+                <option> intel i3-10100F</option>
+                <option> intel i7-10100</option>
+            </optgroup>
+            <optgroup label="amd">  
+                <option>  Ryzen 5 5600X </option>
+                <option>  Ryzen 5 5600G </option>
+                <option>   Ryzen 9 5900X</option>
+            </optgroup>
+        </select>
+      </fieldset>
     </fieldset>
     </form>
-</body>
+  </body>
 </html>
