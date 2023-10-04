@@ -13,6 +13,7 @@
         }
         fieldset {
             background-color: lightslategrey;
+            border-radius: 20px;
         }
 
     </style>
@@ -42,7 +43,7 @@
         </select> 
         <br> </br> Ilośc pamięci: <label for="pamiec"> Od 500GB do 2TB </label>
         <input type="range" name="pamiec" min="512" max="2048" id="a"  oninput="result.value=a.value"/>        
-            <output name="result" for="a">3</output>  <br> </br>   
+            <output name="result" for="a">512</output>  <br> </br>   
         </form>
         <label for="karta"></label>
         Karta graficzna: <br> </br>
@@ -80,7 +81,9 @@
                 <option> Kurier</option>
             </optgroup>
         </select>
-
+        <br> </br>
+        Komentarz do zamówienia:
+            <input type="text" name="Komentarz">
         
       </fieldset>
       <input type="submit" name="wyslij" value="wyślij zamówienie">
