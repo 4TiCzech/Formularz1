@@ -10,9 +10,9 @@
         <fieldset>
       <fieldset>
         <legend>Informacje o użytkowniku</legend>
-        Imię: <input type="text" name="imie" required /> <br> </br>
-        Nazwisko: <input type="password" name="nazwisko" required /> <br> </br>
-        e-mail: <input type="email" name="email" required/> 
+        Imię: <input type="text" name="imie" placeholder="twoje imię" /> <br> </br>
+        Nazwisko: <input type="password" name="nazwisko" placeholder="twoje nazwisko" /> <br> </br>
+        e-mail: <input type="email" name="email" placeholder="twój email" required/> 
       </fieldset>
       <fieldset>
         <legend> Parametry komputera:</legend>
@@ -36,12 +36,24 @@
         <input type="radio" name="pamiec"> 2080 RTX <br> </br>
         <input type="radio" name="pamiec"> 3080 RTX
         <input type="radio" name="pamiec"> 4080 RTX<br> </br>
-        Ilość pamięci RAM: <br> </br>
         Wpisz ilość RAMU (GB): <input type="number" name="ram" placeholder="np. 8"></input>
+        <br> </br>
         Opcje dodatkowe: <br> </br>
         Odtwarzacz CD  <input type="checkbox" name="dod"> 
-        Dodatkowa karta dźwiekowa  <input type="checkbox" name="dod"> 
+        Dodatkowa karta dźwiekowa  <input type="checkbox" name="opcje_dodatkowe"> 
       </fieldset>
+      <fieldset>
+        <legend>Urządzenia peryferyjne</legend>
+
+
+      
+        
+
+
+  
+      </fieldset>
+      <input type="submit" name="wyslij" value="wyślij zamówienie">
+      <input type="reset" name="reset" value="zresetuj formularz">
     </fieldset>
     </form>
   </body>
