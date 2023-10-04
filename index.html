@@ -4,6 +4,18 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            margin-top: 4rem;
+            background-color: grey;
+        }
+        fieldset {
+            background-color: lightslategrey;
+        }
+
+    </style>
   </head>
   <body>
     <form>
@@ -56,10 +68,10 @@
       </fieldset>
       <fieldset>
         <legend> Szczegóły wysyłki</legend>
-        Miasto: <input type="text" name="miasto" placeholder="Miasto w którym mieszkasz"> <br> </br>
-        Ulica: <input type="text" name="ulica" placeholder="Ulica na ktorej mieszkasz"> <br> </br>
-        Kod pocztowy: <input type="text" name="kod" placeholder="Kod pocztowy">  <br> </br>
-        Typ wysyłki: <select>
+        Miasto: <input type="text" name="miasto" placeholder="Miasto w którym mieszkasz" required> <br> </br>
+        Ulica: <input type="text" name="ulica" placeholder="Ulica na ktorej mieszkasz" required> <br> </br>
+        Kod pocztowy: <input type="text" name="kod" placeholder="Kod pocztowy" required>  <br> </br>
+        Typ wysyłki: <select required>
             <optgroup label="InPost"> 
             <option> Paczkomat </option>
             <option> Kurier </option>
