@@ -23,9 +23,11 @@
         <fieldset>
       <fieldset>
         <legend>Informacje o użytkowniku</legend>
+        <label for="dane">
         Imię: <input type="text" name="imie" placeholder="twoje imię" /> <br> </br>
         Nazwisko: <input type="password" name="nazwisko" placeholder="twoje nazwisko" /> <br> </br>
         e-mail: <input type="email" name="email" placeholder="twój email" required/> 
+        </label>
       </fieldset>
       <fieldset>
         <legend> Parametry komputera:</legend>
@@ -62,10 +64,12 @@
         wybierz kolor gratisowej podkładki pod mysz:
         <input type="color" name="col"> <br> </br>
         wybierz rodzaj myszy komputerowej:
+        <label for="mysz" name="mysz">
         <select>
-            <option>Optyczna</option>
-            <option>Laserowa</option>
+            <option>przewodowa</option>
+            <option>bezprzewodowa</option>
         </select>  
+    </label>
       </fieldset>
       <fieldset>
         <legend> Szczegóły wysyłki</legend>
