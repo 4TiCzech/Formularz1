@@ -44,20 +44,25 @@
             </optgroup>
         </select> 
         <br> </br> Ilośc pamięci: <label for="pamiec"> Od 500GB do 2TB </label>
+        <label for="pamiec">
         <input type="range" name="pamiec" min="512" max="2048" id="a"  oninput="result.value=a.value"/>        
             <output name="result" for="a">512</output>  <br> </br>   
+          </label>
         </form>
-        <label for="karta"></label>
+        <label for="karta">
         Karta graficzna: <br> </br>
         <input type="radio" name="pamiec"> 1080 GTX
         <input type="radio" name="pamiec"> 2080 RTX <br> </br>
         <input type="radio" name="pamiec"> 3080 RTX
         <input type="radio" name="pamiec"> 4080 RTX<br> </br>
+      </label>
+      <label for="ram">
         Wpisz ilość RAMU (GB): <input type="number" name="ram" placeholder="np. 8"></input>
         <br> </br>
         Opcje dodatkowe: <br> </br>
         Odtwarzacz CD  <input type="checkbox" name="dod"> 
         Dodatkowa karta dźwiekowa  <input type="checkbox" name="opcje_dodatkowe"> 
+      </label>
       </fieldset>
       <fieldset>
         <legend>Urządzenia peryferyjne</legend>
@@ -73,6 +78,7 @@
       </fieldset>
       <fieldset>
         <legend> Szczegóły wysyłki</legend>
+        <label for="adres"
         Miasto: <input type="text" name="miasto" placeholder="Miasto w którym mieszkasz" required> <br> </br>
         Ulica: <input type="text" name="ulica" placeholder="Ulica na ktorej mieszkasz" required> <br> </br>
         Kod pocztowy: <input type="text" name="kod" placeholder="Kod pocztowy" required>  <br> </br>
@@ -88,7 +94,7 @@
         <br> </br>
         Komentarz do zamówienia:
             <input type="text" name="Komentarz">
-        
+      </label>
       </fieldset>
       <input type="submit" name="wyslij" value="wyślij zamówienie">
       <input type="reset" name="reset" value="zresetuj formularz">
